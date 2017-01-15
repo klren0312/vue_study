@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<ol>
+				<li v-for="todo in todos">
+					{{todo.text}}
+				</li>
+			</ol>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var app =new Vue({
+			el:"#app",
+			data:{
+				todos:[
+					{text:'learn'},
+					{text:'study'},
+					{text:'test'}
+				]
+			}
+		})
+ 
+	</script>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="app" v-bind:class="[activeClass,errorClass]">
+		
+	</div>
+</body>
+<script type="text/javascript">
+	var vm = new Vue({
+		el:"#app",
+		data:{
+			activeClass:'active',
+			errorClass:'text-danger'
+		}
+	})
+</script>
+</html>

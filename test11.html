@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<my-component class="baz boo"></my-component>	
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		Vue.component('my-component',{
+			template:'<p class="foo bar">Hi</p>'
+		})
+		
+		var vm = new Vue({
+			el:"#app"
+		})
+	</script>
+</html>
