@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="example-1">
+			<button v-on:click="counter += 1">增加1</button>
+			<h1>click {{counter}} pics</h1>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var example1 = new Vue({
+			el:"#example-1",
+			data:{
+				counter:0
+			}
+		})
+	</script>
+</html>

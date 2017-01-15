@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div >
+		<div id="app" v-on:keyup.ctrl="test">test</div>	
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		new Vue({
+			el:"#app",
+			method:{
+				test:function(){
+					alert("test")
+				}
+			}
+		})
+	</script>
+</html>
